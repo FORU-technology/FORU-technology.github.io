@@ -1,1 +1,520 @@
-Hello World
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORU - Platform Aman untuk Pembeli dan Penjual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #03AC0E;
+            --secondary-color: #EEFFEF;
+            --accent-color: #FF6B6B;
+        }
+
+        body {
+            font-family: 'Nunito Sans', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #03AC0E);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .cta-section {
+            background-color: var(--secondary-color);
+            padding: 4rem 0;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .app-badge {
+            height: 50px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .social-icon {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: var(--accent-color);
+        }
+
+        .testimonial-card {
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .bg-primary {
+            background-color: var(--secondary-color) !important;
+        }
+
+        .text-primary {
+            color: var(--primary-color) m !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="FORU" class="img-fluid" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fitur">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cara-kerja">Cara Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <a href="#unduh" class="btn btn-primary ms-lg-3">Unduh Aplikasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Menghubungkan Pembeli dan Penjual dengan Aman</h1>
+                    <p class="lead mb-4">Bertemu langsung, bertransaksi dengan nyaman. Sistem pembayaran mobile kami
+                        yang aman memastikan transaksi yang terlindungi antara pembeli dan penjual.</p>
+                    <div class="d-flex flex-wrap">
+                        <a href="#unduh" class="btn btn-light btn-lg me-3 mb-3">Unduh Aplikasi</a>
+                        <a href="#cara-kerja" class="btn btn-outline-light btn-lg mb-3">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Fitur Unggulan</h2>
+                <p class="text-muted">Semua yang Anda butuhkan untuk transaksi langsung yang aman</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4>Pembayaran Aman</h4>
+                            <p>Semua transaksi diproses melalui sistem pembayaran mobile terenkripsi kami, melindungi
+                                baik pembeli maupun penjual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Pertemuan Lokal</h4>
+                            <p>Temukan pembeli atau penjual terdekat dan atur titik temu yang aman untuk transaksi Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Pengguna Terverifikasi</h4>
+                            <p>Sistem verifikasi kami membantu memastikan Anda berurusan dengan anggota komunitas
+                                tepercaya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Chat Dalam Aplikasi</h4>
+                            <p>Berkomunikasi dengan aman dalam aplikasi sebelum bertemu, tanpa perlu berbagi detail
+                                kontak pribadi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h4>Notifikasi Transaksi</h4>
+                            <p>Dapatkan pemberitahuan real-time tentang transaksi dan konfirmasi pertemuan Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Analisis Penjual</h4>
+                            <p>Penjual mendapatkan wawasan berharga tentang transaksi dan interaksi pelanggan mereka.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="cara-kerja" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Cara FORU Bekerja</h2>
+                <p class="text-muted">Langkah sederhana untuk transaksi yang aman</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px;">
+                                <span class="text-primary fs-2">1</span>
+                            </div>
+                            <h4 class="my-3">Temukan atau Pasang Iklan</h4>
+                            <p>Jelajahi barang yang ingin Anda beli atau pasang iklan barang yang ingin Anda jual.
+                                Algoritma kami membantu mencocokkan Anda dengan pengguna terdekat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px;">
+                                <span class="text-primary fs-2">2</span>
+                            </div>
+                            <h4 class="my-3">Hubungi & Chat</h4>
+                            <p>Gunakan pesan dalam aplikasi yang aman untuk mendiskusikan detail dan mengatur tempat
+                                pertemuan yang aman untuk kedua belah pihak.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px;">
+                                <span class="text-primary fs-2">3</span>
+                            </div>
+                            <h4 class="my-3">Bertemu & Bertransaksi</h4>
+                            <p>Bertemu langsung untuk memeriksa barang, lalu selesaikan transaksi aman melalui sistem
+                                pembayaran mobile kami.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Apa Kata Pengguna Kami</h2>
+                <p class="text-muted">Dipercaya oleh ribuan pembeli dan penjual</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Saya telah menjual lebih dari 50 barang menggunakan FORU. Sistem
+                                pembayaran memberi pembeli keyakinan untuk bertemu langsung, dan saya mendapatkan uang
+                                saya secara instan."</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div>
+                                    <h6 class="mb-0">Sarah Wijaya</h6>
+                                    <small class="text-muted">Penjual Rutin</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Sebagai pembeli, saya senang bisa memeriksa barang secara langsung
+                                sebelum membayar. Aplikasi menahan pembayaran dengan aman sampai saya konfirmasi puas."
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div>
+                                    <h6 class="mb-0">Michael Tan</h6>
+                                    <small class="text-muted">Pembeli Rutin</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text">"Sistem verifikasi membuat saya merasa aman bertemu orang baru. Selama menggunakan aplikasi FORU
+                                saya merasakan kemudahan dan kemanan yang terjamin saat bertransaksi"</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div>
+                                    <h6 class="mb-0">David Santoso</h6>
+                                    <small class="text-muted">Pemilik Bisnis Kecil</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="tentang" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="images/team.jpg" alt="Tim Kami" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Tentang FORU</h2>
+                    <p>Didirikan pada tahun 2023, FORU dibuat untuk mengatasi tantangan transaksi peer-to-peer lokal.
+                        Kami menyadari bahwa meskipun pasar online bagus untuk menghubungkan pembeli dan penjual, proses
+                        transaksi sebenarnya seringkali terasa berisiko dan tidak pasti.</p>
+                    <p>Misi kami adalah menciptakan cara yang lebih aman dan transparan bagi orang untuk membeli dan
+                        menjual secara langsung. Dengan menggabungkan pembayaran mobile yang aman dengan profil pengguna
+                        terverifikasi dan komunikasi dalam aplikasi, kami membangun kepercayaan dalam perdagangan lokal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section id="unduh" class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Siap Melakukan Transaksi Yang Aman?</h2>
+                    <p class="lead mb-5">Unduh FORU hari ini dan bergabunglah dengan ribuan pengguna yang menikmati
+                        transaksi langsung yang lebih aman.</p>
+                    <!-- <div class="d-flex flex-wrap justify-content-center">
+                        <a href="#" class="m-2">
+                            <img src="https://via.placeholder.com/150x50/03AC0E/ffffff?text=App+Store" alt="App Store"
+                                class="app-badge">
+                        </a>
+                        <a href="#" class="m-2">
+                            <img src="https://via.placeholder.com/150x50/03AC0E/ffffff?text=Google+Play"
+                                alt="Google Play" class="app-badge">
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+                    <p class="mb-4">Punya pertanyaan atau masukan? Kami ingin mendengar dari Anda!</p>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-envelope me-2 text-primary"></i> Email</h5>
+                        <p>foru.tech.help@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-phone me-2 text-primary"></i> Telepon</h5>
+                        <p>+62 852-8184-4858</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-map-marker-alt me-2 text-primary"></i> Kantor</h5>
+                        <p>Jl. Tanakayu, BSD City<br>Tangerang Selatan, Banten 15345</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h4 class="mb-4">Kirim pesan kepada kami</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nama Anda">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Anda">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subjek">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Pesan Anda"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/logo_white.png" alt="FORU" class="img-fluid" style="max-height: 40px;">
+                    <p>Transaksi lebih aman dan nyaman melalui pembayaran yang aman dan terverifikasi.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#fitur" class="text-white-50 text-decoration-none">Fitur</a></li>
+                        <li class="mb-2"><a href="#cara-kerja" class="text-white-50 text-decoration-none">Cara Kerja</a>
+                        </li>
+                        <li class="mb-2"><a href="#tentang" class="text-white-50 text-decoration-none">Tentang Kami</a>
+                        </li>
+                        <li class="mb-2"><a href="#kontak" class="text-white-50 text-decoration-none">Kontak</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Kebijakan Privasi</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Syarat Layanan</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Keamanan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-white-50">Berlangganan untuk mendapatkan pembaruan tentang fitur baru dan tips untuk
+                        transaksi yang lebih aman.</p>
+                    <form class="mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Anda">
+                            <button class="btn btn-primary" type="submit">Berlangganan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">© 2025 FORU. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
