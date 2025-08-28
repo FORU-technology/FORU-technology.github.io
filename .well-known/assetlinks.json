@@ -2,7 +2,7 @@
   {
     "relation": [ "delegate_permission/common.handle_all_urls" ],
     "target": {
-      "namespace": "com.foru.ecommerce",
+      "namespace": "android_app",
       "package_name": "dev.com.foru.ecommerce",
       "sha256_cert_fingerprints": [
         "CF:9C:8D:E1:3B:A5:90:7D:A4:D7:5E:8A:D4:B5:82:DA:FD:0C:EA:45:E2:7C:F9:B0:55:EC:CA:25:FE:45:55:8D"
