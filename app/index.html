@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <title>FORU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
     window.onload = function() {
-      // Try to open the app using intent
-      window.location = "intent://app#Intent;scheme=https;package=dev.com.foru.ecommerce;end;";
-      // If not installed, fallback after short delay
+      // Try to open the app via HTTPS deep link
+      const appUrl = "https://www.foruindonesia.com/app";
+      window.location = appUrl;
+
+      // Fallback after 2 seconds (app not installed or not verified)
       setTimeout(function() {
+        // Redirect to Play Store (replace package_name with your actual app once published)
         window.location = "https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce";
       }, 1000);
     };
@@ -16,6 +20,6 @@
 </head>
 <body>
   <p>Redirecting to the app…</p>
-  <p>If not redirected, <a href="https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce">tap here</a>.</p>
+  <p>If not redirected automatically, <a href="https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce">tap here</a>.</p>
 </body>
 </html>
