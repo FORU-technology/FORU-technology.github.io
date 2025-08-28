@@ -3,10 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <title>FORU</title>
-  <meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.android.chrome" />
+  <script>
+    window.onload = function() {
+      // Try to open the app using intent
+      window.location = "intent://app#Intent;scheme=https;package=dev.com.foru.ecommerce;end;";
+      // If not installed, fallback after short delay
+      setTimeout(function() {
+        window.location = "https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce";
+      }, 1000);
+    };
+  </script>
 </head>
 <body>
   <p>Redirecting to the app…</p>
-  <p>If not redirected, <a href="https://play.google.com/store/apps/details?id=com.android.chrome">tap here</a>.</p>
+  <p>If not redirected, <a href="https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce">tap here</a>.</p>
 </body>
 </html>
