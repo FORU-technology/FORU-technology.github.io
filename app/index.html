@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
     window.onload = function() {
-      // Try to open the app via HTTPS deep link
-      const appUrl = "https://www.foruindonesia.com/app";
-      window.location = appUrl;
+      // Open app via intent://
+      const packageName = "dev.com.foru.ecommerce";
+      const intentURL = `intent://app#Intent;scheme=https;package=${packageName};end`;
 
-      // Fallback after 2 seconds (app not installed or not verified)
+      window.location = intentURL;
+
+      // Optional: fallback for browsers that don't support intent://
       setTimeout(function() {
-        // Redirect to Play Store (replace package_name with your actual app once published)
-        window.location = "https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce";
-      }, 1000);
+        window.location = `https://play.google.com/store/apps/details?id=${packageName}`;
+      }, 1500);
     };
   </script>
 </head>
