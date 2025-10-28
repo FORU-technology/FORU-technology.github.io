@@ -8,5 +8,15 @@
         "CF:9C:8D:E1:3B:A5:90:7D:A4:D7:5E:8A:D4:B5:82:DA:FD:0C:EA:45:E2:7C:F9:B0:55:EC:CA:25:FE:45:55:8D"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.foru.ecommerce",
+      "sha256_cert_fingerprints": [
+        "61:B0:E8:5A:86:88:3C:95:A0:7F:98:FA:D8:6B:CC:70:FB:D5:0A:25:27:CE:E5:A9:FB:87:5D:A0:69:69:0F:C1"
+      ]
+    }
   }
 ]

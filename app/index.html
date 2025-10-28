@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
     window.onload = function() {
-      // Open app via intent://
-      const packageName = "dev.com.foru.ecommerce";
+
+      const packageName = "com.foru.ecommerce";
       const intentURL = `intent://app#Intent;scheme=https;package=${packageName};end`;
 
-      window.location = intentURL;
+      window.location.replace(intentURL);
 
-      // Optional: fallback for browsers that don't support intent://
+  
       setTimeout(function() {
         window.location = `https://play.google.com/store/apps/details?id=${packageName}`;
       }, 1500);
@@ -21,6 +21,6 @@
 </head>
 <body>
   <p>Redirecting to the app…</p>
-  <p>If not redirected automatically, <a href="https://play.google.com/store/apps/details?id=dev.com.foru.ecommerce">tap here</a>.</p>
+  <p>If not redirected automatically, <a href="https://play.google.com/store/apps/details?id=com.foru.ecommerce">tap here</a>.</p>
 </body>
 </html>
