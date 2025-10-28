@@ -14,8 +14,9 @@
     "target": {
       "namespace": "android_app",
       "package_name": "com.foru.ecommerce",
-      "sha256_cert_fingerprints": [
-        "61:B0:E8:5A:86:88:3C:95:A0:7F:98:FA:D8:6B:CC:70:FB:D5:0A:25:27:CE:E5:A9:FB:87:5D:A0:69:69:0F:C1"
+     "sha256_cert_fingerprints": [
+        "61:B0:E8:5A:86:88:3C:95:A0:7F:98:FA:D8:6B:CC:70:FB:D5:0A:25:27:CE:E5:A9:FB:87:5D:A0:69:69:0F:C1",
+        "9E:02:4E:79:97:C7:15:41:43:BF:6C:E7:FE:6E:6F:7B:CD:35:64:8E:4C:EC:AC:CD:52:2B:2E:73:75:28:D3:60"
       ]
     }
   }
