@@ -33,44 +33,97 @@
 
 <body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+   <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.webp" alt="">
-      </a>
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="assets/img/logo.webp" alt="FORU Logo">
+    </a>
 
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li>
+          <a 
+            href="index.html#hero" 
+            class="active"
+            data-id="Beranda"
+            data-en="Home"
+          >
+            Home
+          </a>
+        </li>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Home</a></li>
-          <li><a href="index.html#Fitur">Fitur</a></li>
-          <li><a href="index.html#Carakerjaforu">Cara kerja</a></li>
-          <li><a href="index.html#Tentangkami">Tentang Kami</a></li>
-          <li><a href="index.html#Hubungikami">Hubungi Kami</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+        <li>
+          <a 
+            href="index.html#Fitur"
+            data-id="Fitur"
+            data-en="Features"
+          >
+            Fitur
+          </a>
+        </li>
 
-      <a class="btn-getstarted" href="index.html#call-to-action">Unduh Aplikasi</a>
+        <li>
+          <a 
+            href="index.html#Tentangkami"
+            data-id="Tentang Kami"
+            data-en="About Us"
+          >
+            Tentang Kami
+          </a>
+        </li>
 
+        <li>
+          <a 
+            href="index.html#Visi"
+            data-id="Visi"
+            data-en="Vision"
+          >
+            Visi
+          </a>
+        </li>
+
+        <li>
+          <a 
+            href="index.html#Maskot"
+            data-id="Maskot"
+            data-en="Mascot"
+          >
+            Maskot
+          </a>
+        </li>
+
+        <li>
+          <a 
+            href="index.html#Hubungikami"
+            data-id="Hubungi Kami"
+            data-en="Contact Us"
+          >
+            Hubungi Kami
+          </a>
+        </li>
+
+        <div class="mobile-menu-utility"> 
+        <div class="language-switcher">
+          <div class="select-wrapper">
+            <select class="lang-dropdown">
+              <option value="id">Bahasa Indonesia</option>
+              <option value="en">English</option>
+            </select>
+            <i class="bi bi-chevron-down select-arrow"></i>
+          </div>
+        </div>
     </div>
+
+      </ul>
+
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+     </div>
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="container position-relative">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Kebijakan Privasi</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
 
      <!-- Privacy Section -->
     <section id="privacy" class="privacy section">
@@ -79,82 +132,257 @@
         <!-- Header -->
         <div class="privacy-header">
           <div class="header-content">
-            <div class="last-updated">Diperbarui: 3 September 2025</div>
-            <h1>Kebijakan Privasi</h1>
-            <p class="intro-text">Kami menghargai privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana FORU mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi pengguna saat menggunakan aplikasi maupun layanan FORU.</p>
+            <h1
+              data-id="Kebijakan Privasi"
+              data-en="Privacy Policy"
+            >
+              Kebijakan Privasi
+            </h1>
+
+            <p
+              class="intro-text"
+              data-id="Kami menghargai privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana FORU mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi pengguna saat menggunakan aplikasi maupun layanan FORU."
+              data-en="We respect your privacy. This Privacy Policy explains how FORU collects, uses, stores, and protects users’ personal information when using FORU applications and services."
+            >
+              Kami menghargai privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana FORU mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi pengguna saat menggunakan aplikasi maupun layanan FORU.
+            </p>
+
+            <div
+              class="last-updated"
+              data-id="Diperbarui: 3 September 2025"
+              data-en="Last updated: September 3, 2025"
+            >
+              Diperbarui: 3 September 2025
+            </div>
           </div>
         </div>
+
 
         <!-- Main Content -->
         <div class="privacy-content">
-          
+
           <div class="content-section">
-            <h2>1. Informasi yang Kami Kumpulkan</h2>
-            <p>Kami dapat mengumpulkan informasi berikut:</p>
+            <h3
+              data-id="1. Informasi yang Kami Kumpulkan"
+              data-en="1. Information We Collect"
+            >
+              1. Informasi yang Kami Kumpulkan
+            </h3>
+
+            <p
+              data-id="Kami dapat mengumpulkan informasi berikut:"
+              data-en="We may collect the following information:"
+            >
+              Kami dapat mengumpulkan informasi berikut:
+            </p>
+
             <ul>
-              <li>Data yang diberikan pengguna: nama lengkap, alamat email, alamat, foto produk, dan dokumen identitas (KTP).</li>
-              <li>Data otomatis: informasi perangkat, data lokasi (radius pencarian)</li>
-              <li>Data transaksi: riwayat pembelian, penjualan, metode pembayaran, dan bukti pembayaran.</li>
+              <li
+                data-id="Data yang diberikan pengguna: nama lengkap, alamat email, alamat, foto produk, dan dokumen identitas (KTP)."
+                data-en="User-provided data: full name, email address, address, product photos, and identity documents (ID card)."
+              >
+                Data yang diberikan pengguna: nama lengkap, alamat email, alamat, foto produk, dan dokumen identitas (KTP).
+              </li>
+
+              <li
+                data-id="Data otomatis: informasi perangkat, data lokasi (radius pencarian)."
+                data-en="Automatically collected data: device information and location data (search radius)."
+              >
+                Data otomatis: informasi perangkat, data lokasi (radius pencarian)
+              </li>
+
+              <li
+                data-id="Data transaksi: riwayat pembelian, penjualan, metode pembayaran, dan bukti pembayaran."
+                data-en="Transaction data: purchase and sales history, payment methods, and payment proof."
+              >
+                Data transaksi: riwayat pembelian, penjualan, metode pembayaran, dan bukti pembayaran.
+              </li>
             </ul>
           </div>
 
-         
           <div class="content-section">
-            <h2>2. Penggunaan Informasi</h2>
-            <p>Informasi yang kami kumpulkan digunakan untuk:</p>
+            <h3
+              data-id="2. Penggunaan Informasi"
+              data-en="2. Use of Information"
+            >
+              2. Penggunaan Informasi
+            </h3>
+
+            <p
+              data-id="Informasi yang kami kumpulkan digunakan untuk:"
+              data-en="The information we collect is used to:"
+            >
+              Informasi yang kami kumpulkan digunakan untuk:
+            </p>
+
             <ul>
-              <li>Menyediakan layanan FORU (pencarian barang, transaksi, chat, escrow).</li>
-              <li>Memproses pembayaran dan penyelesaian transaksi.</li>
-              <li>Menjaga keamanan akun dan mencegah penipuan.</li>
-              <li>Meningkatkan kualitas layanan dan mengembangkan fitur baru.</li>
-              <li>Mengirimkan pemberitahuan terkait transaksi, promosi, atau pembaruan layanan.</li>
+              <li
+                data-id="Menyediakan layanan FORU (pencarian barang, transaksi, chat, escrow)."
+                data-en="Provide FORU services (product search, transactions, chat, escrow)."
+              >
+                Menyediakan layanan FORU (pencarian barang, transaksi, chat, escrow).
+              </li>
+
+              <li
+                data-id="Memproses pembayaran dan penyelesaian transaksi."
+                data-en="Process payments and complete transactions."
+              >
+                Memproses pembayaran dan penyelesaian transaksi.
+              </li>
+
+              <li
+                data-id="Menjaga keamanan akun dan mencegah penipuan."
+                data-en="Maintain account security and prevent fraud."
+              >
+                Menjaga keamanan akun dan mencegah penipuan.
+              </li>
+
+              <li
+                data-id="Meningkatkan kualitas layanan dan mengembangkan fitur baru."
+                data-en="Improve service quality and develop new features."
+              >
+                Meningkatkan kualitas layanan dan mengembangkan fitur baru.
+              </li>
+
+              <li
+                data-id="Mengirimkan pemberitahuan terkait transaksi, promosi, atau pembaruan layanan."
+                data-en="Send notifications related to transactions, promotions, or service updates."
+              >
+                Mengirimkan pemberitahuan terkait transaksi, promosi, atau pembaruan layanan.
+              </li>
             </ul>
           </div>
 
-         
           <div class="content-section">
-            <h2>3. Berbagi Informasi</h2>
-            <p>Kami tidak menjual data pribadi Anda kepada pihak ketiga. Namun, informasi dapat dibagikan dengan:</p>
+            <h3
+              data-id="3. Berbagi Informasi"
+              data-en="3. Information Sharing"
+            >
+              3. Berbagi Informasi
+            </h3>
+
+            <p
+              data-id="Kami tidak menjual data pribadi Anda kepada pihak ketiga. Namun, informasi dapat dibagikan dengan:"
+              data-en="We do not sell your personal data to third parties. However, information may be shared with:"
+            >
+              Kami tidak menjual data pribadi Anda kepada pihak ketiga. Namun, informasi dapat dibagikan dengan:
+            </p>
+
             <ul>
-              <li>Mitra pembayaran untuk memproses transaksi.</li>
-              <li>Pihak berwenang jika diwajibkan oleh hukum.</li>
+              <li
+                data-id="Mitra pembayaran untuk memproses transaksi."
+                data-en="Payment partners to process transactions."
+              >
+                Mitra pembayaran untuk memproses transaksi.
+              </li>
+
+              <li
+                data-id="Pihak berwenang jika diwajibkan oleh hukum."
+                data-en="Authorities when required by applicable laws."
+              >
+                Pihak berwenang jika diwajibkan oleh hukum.
+              </li>
             </ul>
           </div>
 
-         
           <div class="content-section">
-            <h2>4. Keamanan Data</h2>
-            <p>FORU menggunakan langkah-langkah keamanan teknis dan administratif untuk melindungi data pribadi, termasuk enkripsi, autentikasi, dan pembatasan akses.</p>
+            <h3
+              data-id="4. Keamanan Data"
+              data-en="4. Data Security"
+            >
+              4. Keamanan Data
+            </h3>
+
+            <p
+              data-id="FORU menggunakan langkah-langkah keamanan teknis dan administratif untuk melindungi data pribadi, termasuk enkripsi, autentikasi, dan pembatasan akses."
+              data-en="FORU implements technical and administrative security measures to protect personal data, including encryption, authentication, and access control."
+            >
+              FORU menggunakan langkah-langkah keamanan teknis dan administratif untuk melindungi data pribadi, termasuk enkripsi, autentikasi, dan pembatasan akses.
+            </p>
           </div>
 
-          
           <div class="content-section">
-            <h2>5. Hak Pengguna</h2>
-            <p>Anda memiliki hak untuk:</p>
+            <h3
+              data-id="5. Hak Pengguna"
+              data-en="5. User Rights"
+            >
+              5. Hak Pengguna
+            </h3>
+
+            <p
+              data-id="Anda memiliki hak untuk:"
+              data-en="You have the right to:"
+            >
+              Anda memiliki hak untuk:
+            </p>
+
             <ul>
-              <li>Mengakses dan memperbarui informasi pribadi Anda.</li>
-              <li>Meminta penghapusan akun dan data pribadi tertentu.</li>
-              <li>Menolak penggunaan data untuk tujuan promosi.</li>
+              <li
+                data-id="Mengakses dan memperbarui informasi pribadi Anda."
+                data-en="Access and update your personal information."
+              >
+                Mengakses dan memperbarui informasi pribadi Anda.
+              </li>
+
+              <li
+                data-id="Meminta penghapusan akun dan data pribadi tertentu."
+                data-en="Request account deletion and removal of certain personal data."
+              >
+                Meminta penghapusan akun dan data pribadi tertentu.
+              </li>
+
+              <li
+                data-id="Menolak penggunaan data untuk tujuan promosi."
+                data-en="Opt out of data usage for promotional purposes."
+              >
+                Menolak penggunaan data untuk tujuan promosi.
+              </li>
             </ul>
           </div>
 
-
           <div class="content-section">
-            <h2>6. Penyimpanan & Penghapusan Data</h2>
+            <h3
+              data-id="6. Penyimpanan & Penghapusan Data"
+              data-en="6. Data Retention & Deletion"
+            >
+              6. Penyimpanan & Penghapusan Data
+            </h3>
+
             <ul>
-              <li>Data akan disimpan selama akun aktif atau sesuai kebutuhan layanan.</li>
-              <li>Jika akun dihapus, sebagian data transaksi tetap disimpan sesuai ketentuan hukum yang berlaku.</li>
+              <li
+                data-id="Data akan disimpan selama akun aktif atau sesuai kebutuhan layanan."
+                data-en="Data will be retained while the account is active or as required for service purposes."
+              >
+                Data akan disimpan selama akun aktif atau sesuai kebutuhan layanan.
+              </li>
+
+              <li
+                data-id="Jika akun dihapus, sebagian data transaksi tetap disimpan sesuai ketentuan hukum yang berlaku."
+                data-en="If the account is deleted, certain transaction data may still be retained in accordance with applicable laws."
+              >
+                Jika akun dihapus, sebagian data transaksi tetap disimpan sesuai ketentuan hukum yang berlaku.
+              </li>
             </ul>
           </div>
 
-
           <div class="content-section">
-            <h2>7. Perubahan Kebijakan Privasi</h2>
-            <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan akan diberitahukan melalui aplikasi atau email.</p>
+            <h3
+              data-id="7. Perubahan Kebijakan Privasi"
+              data-en="7. Changes to This Privacy Policy"
+            >
+              7. Perubahan Kebijakan Privasi
+            </h3>
+
+            <p
+              data-id="Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan akan diberitahukan melalui aplikasi atau email."
+              data-en="We may update this Privacy Policy from time to time. Any changes will be notified through the application or via email."
+            >
+              Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan akan diberitahukan melalui aplikasi atau email.
+            </p>
           </div>
 
-          
         </div>
+
 
       </div>
 
@@ -166,59 +394,135 @@
 
   <footer id="footer" class="footer position-relative light-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.webp" alt="">
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- ABOUT -->
+      <div class="col-lg-4 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.webp" alt="FORU Logo">
+        </a>
+
+        <p
+          data-id="Its All For You."
+          data-en="Its All For You."
+        >
+          Its All For You.
+        </p>
+
+        <div class="social-links d-flex mt-4">
+          <a href="https://www.instagram.com/foruofficial_id/" target="_blank">
+            <i class="bi bi-instagram"></i>
           </a>
-          <p>Transaksi lebih aman dan nyaman melalui pembayaran yang aman dan terverifikasi.</p>
-          <div class="social-links d-flex mt-4">
-            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
-            <a href="https://www.instagram.com/foruofficial_id/"><i class="bi bi-instagram"></i></a>
-             <a href="https://www.tiktok.com/@foruofficial_id"><i class="bi bi-tiktok"></i></a>
-             <a href="https://www.facebook.com/people/FORU/61585422803895/"><i class="bi bi-facebook"></i></a>
-            <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
-          </div>
+          <a href="https://www.tiktok.com/@foruofficial_id" target="_blank">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a href="https://www.facebook.com/people/FORU/61585422803895/" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
         </div>
-
-        
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Perusahaan</h4>
-          <ul>
-           <li><a href="index.html#Tentangkami">Tentang FORU</a></li>
-            <li><a href="kebijakanprivasi.html">Kebijakan Privasi</a></li>
-            <li><a href="syaratlayanan.html">Syarat Layanan</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Bantuan</h4>
-          <ul>
-             <li><a href="foru-care.html" target="_blank" rel="noopener noreferrer">Pusat bantuan</a></li>
-            <!-- <li><a href="#">Syarat Layanan</a></li>
-            <li><a href="#">Keamanan</a></li> -->
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Hubungi Kami</h4>
-          <p>Jalan Raya Serpong Nomor 39, RT 002/RW. 003, Kel. Pakulonan, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15325</p>
-         
-          <p class="mt-4"><strong>Phone:</strong> <span>+62 852-8184-4858</span></p>
-          <p><strong>Email:</strong> <span>foru.tech.help@gmail.com</span></p>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>2026 FORU</span> <span>All Rights Reserved</span></p>
-      
-    </div>
+      <!-- COMPANY -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4
+          data-id="Perusahaan"
+          data-en="Company"
+        >
+          Perusahaan
+        </h4>
+        <ul>
+          <li>
+            <a
+              href="#Tentangkami"
+              data-id="Tentang FORU"
+              data-en="About FORU"
+            >
+              Tentang FORU
+            </a>
+          </li>
+          <li>
+            <a
+              href="kebijakanprivasi.html"
+              data-id="Kebijakan Privasi"
+              data-en="Privacy Policy"
+            >
+              Kebijakan Privasi
+            </a>
+          </li>
+          <li>
+            <a
+              href="syaratlayanan.html"
+              data-id="Syarat Layanan"
+              data-en="Terms of Service"
+            >
+              Syarat Layanan
+            </a>
+          </li>
+        </ul>
+      </div>
 
-  </footer>
+      <!-- HELP -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4
+          data-id="Bantuan"
+          data-en="Support"
+        >
+          Bantuan
+        </h4>
+        <ul>
+          <li>
+            <a
+              href="foru-care.html"
+              target="_blank"
+              data-id="Pusat Bantuan"
+              data-en="Help Center"
+            >
+              Pusat Bantuan
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4
+          data-id="Hubungi Kami"
+          data-en="Contact Us"
+        >
+          Hubungi Kami
+        </h4>
+
+        <p>
+          Jalan Raya Serpong Nomor 39, RT 002/RW. 003,  
+          Kel. Pakulonan, Kec. Serpong Utara,  
+          Kota Tangerang Selatan, Banten 15325
+        </p>
+
+        <p class="mt-4">
+          <strong
+            data-id="Telepon:"
+            data-en="Phone:"
+          >
+            Telepon:
+          </strong>
+          <span>+62 852-8184-4858</span>
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <span>foru.tech.help@gmail.com</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+  <p id="copyright-text"></p>
+  </div>
+
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

@@ -1,15 +1,19 @@
 /* Fonts */
 :root {
-  --default-font: "Barlow",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Barlow",  sans-serif;
-  --nav-font: "Rubik",  sans-serif;
+  --default-font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --heading-font: "Plus Jakarta Sans", sans-serif;
+  --nav-font: "Plus Jakarta Sans", sans-serif;
 }
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #3b5353; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #193838; /* Color for headings, subheadings and title throughout the website */
+  --default-color: #2f3232; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #262727; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #03AC0E; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -144,7 +148,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 30px;
   margin-right: 8px;
 }
 
@@ -203,6 +207,39 @@ h6 {
 .index-page.scrolled .header {
   --background-color: #ffffff;
 }
+
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 16px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.lang-btn.active {
+  color: #03AC0E;
+  font-weight: 600;
+}
+
+.lang-btn:hover {
+  color: #03AC0E;
+}
+
+.language-switcher .divider {
+  font-size: 14px;
+  color: #bbb;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -445,16 +482,16 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  /* color: var(--default-color); */
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .footer-top {
   padding-top: 50px;
-  /* border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
 }
 
 .footer .footer-about .logo {
@@ -695,7 +732,7 @@ section,
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 20px;
   padding-bottom: 0;
   position: relative;
@@ -711,7 +748,7 @@ section,
   z-index: 1;
   font-weight: 700;
   font-size: 52px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 1;
 }
 
@@ -736,15 +773,30 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 140px 0 60px 0;
-  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  /* padding: 252px 0 100px 0; */
+  padding-top: 120px;
+  padding-bottom: 250px;
+  background-image:
+  linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.00)
+  ),
+  url("../img/herobg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  
 }
+
+
+
 
 .hero.alt {
   padding: 100px 0 16px 0;
-  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  /* background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%); */
   position: relative;
   overflow: hidden;
 }
@@ -756,7 +808,7 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--accent-color), transparent 90%) 0%, transparent 50%);
+  /* background: radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--accent-color), transparent 90%) 0%, transparent 50%); */
   pointer-events: none;
 }
 
@@ -767,20 +819,21 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--accent-color), transparent 90%) 0%, transparent 50%);
+  /* background: radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--accent-color), transparent 90%) 0%, transparent 50%); */
   pointer-events: none;
 }
 
 .hero .hero-content {
   padding: 20px 0;
+  /* margin-top: -60px; */
 }
 
 .hero .hero-content .hero-title {
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-size: 4.0rem;
+  font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 32px;
-  color: var(--heading-color);
+  margin-bottom: 36px;
+  color: #03AC0E;
 }
 
 @media (max-width: 768px) {
@@ -791,11 +844,11 @@ section,
 }
 
 .hero .hero-content .hero-description {
-  font-size: 1.25rem;
+  font-size: 1.36rem;
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 10%);
   margin-bottom: 48px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -825,7 +878,7 @@ section,
   color: var(--contrast-color);
   padding: 16px 32px;
   border-radius: 6px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -1012,7 +1065,11 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .content-wrapper {
-  padding-right: 2rem;
+  padding-right: 1rem;
+}
+
+.about .content-wrapper-left {
+  padding-left: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -1060,9 +1117,20 @@ section,
 }
 
 .about .description-text {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
+  text-align: justify;
   line-height: 1.7;
-  margin-bottom: 2.5rem;
+  font-size: 1.125rem;
+  /* margin-bottom: 2rem; */
+}
+
+.about .description-text-bold {
+  font-size: 1.265rem;
+   text-align: justify;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  color: var(--heading-color);
 }
 
 .about .stats-grid {
@@ -1108,17 +1176,29 @@ section,
 
 .about .visual-section {
   position: relative;
+  height: 100%;
+  display: flex;
+  
 }
 
 .about .main-image-container {
   position: relative;
   margin-bottom: 2rem;
+  align-items: flex-start;
+  /* max-width: 500px; */
 }
 
 .about .main-image-container .main-visual {
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
+  /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); */
 }
+
+/* .about .main-image-container-noborder .main-visual-noborder {
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+} */
 
 .about .main-image-container .overlay-card {
   position: absolute;
@@ -1227,6 +1307,66 @@ section,
   line-height: 1.6;
   margin: 0;
 }
+
+/* =========================
+   Maskot Section – Image Height Sync
+   ========================= */
+
+#Maskot .row {
+  align-items: stretch;
+}
+
+/* Kolom visual ikut tinggi konten */
+#Maskot .visual-section {
+  height: 100%;
+  display: flex;
+}
+
+/* Container gambar full height */
+#Maskot .main-image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start; /* sejajar dengan awal teks */
+}
+
+/* Image mengikuti tinggi deskripsi */
+#Maskot .main-visual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* aman, ilustrasi tidak kepotong */
+}
+
+
+/* =========================
+   Tentangkami Section – Image Height Sync
+   ========================= */
+
+#Tentangkami .row {
+  align-items: stretch;
+}
+
+/* Kolom visual ikut tinggi konten */
+#Tentangkami .visual-section {
+  height: 100%;
+  display: flex;
+}
+
+/* Container gambar full height */
+#Tentangkami .main-image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start; /* sejajar dengan awal teks */
+}
+
+/* Image mengikuti tinggi deskripsi */
+#Tentangkami .main-visual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* aman, ilustrasi tidak kepotong */
+}
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -1993,7 +2133,7 @@ section,
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--surface-color), var(--accent-color) 3%) 0%, var(--surface-color) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, #2e6417, var(--accent-color) 3%) 0%, var(--surface-color) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -2021,7 +2161,7 @@ section,
 
 .call-to-action .image-wrapper .main-image {
   border-radius: 20px;
-  box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+  /* box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 85%); */
   transition: transform 0.3s ease;
 }
 
@@ -2688,7 +2828,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  padding: 80px 0;
+  padding: 36px 0;
 }
 
 .services .intro-content .section-badge {
@@ -2730,6 +2870,20 @@ section,
   margin-bottom: 2rem;
 }
 
+.service-description {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.125rem;
+}
+
+.service-description-left {
+  text-align: left;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+
 .services .intro-content .cta-button {
   display: inline-block;
   background: var(--accent-color);
@@ -2766,8 +2920,9 @@ section,
 
 .services .services-grid .service-card {
   background: var(--surface-color);
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 16px;
   height: 100%;
   transition: all 0.3s ease;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -2782,7 +2937,7 @@ section,
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -2790,7 +2945,7 @@ section,
 
 .services .services-grid .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px color-mix(in srgb, var(--default-color), transparent 80%);
+  /* box-shadow: 0 25px 50px color-mix(in srgb, var(--default-color), transparent 80%); */
 }
 
 .services .services-grid .service-card:hover::before {
@@ -2814,7 +2969,7 @@ section,
   height: 60px;
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
   color: var(--accent-color);
-  border-radius: 15px;
+  border-radius: 16px;
   font-size: 1.5rem;
   font-weight: 700;
   transition: all 0.3s ease;
@@ -2864,10 +3019,8 @@ section,
 --------------------------------------------------------------*/
 .pricing {
   --card-radius: 16px;
-  --card-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
   --muted: color-mix(in srgb, var(--default-color), transparent 55%);
   --line: color-mix(in srgb, var(--default-color), transparent 85%);
-  --accent-soft: color-mix(in srgb, var(--accent-color), transparent 85%);
   --accent-strong: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
@@ -2943,7 +3096,8 @@ section,
 }
 
 .pricing .price-card {
-  background: var(--surface-color);
+  /* background: var(--surface-color); */
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   border: 1px solid var(--line);
   border-radius: var(--card-radius);
   padding: 28px;
@@ -2955,8 +3109,8 @@ section,
 
 .pricing .price-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 40px color-mix(in srgb, var(--default-color), transparent 88%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  /* box-shadow: 0 14px 40px color-mix(in srgb, var(--default-color), transparent 88%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%); */
 }
 
 .pricing .price-card.featured {
@@ -3998,10 +4152,11 @@ section,
 }
 
 .privacy .privacy-header {
-  margin-bottom: 60px;
-  text-align: center;
+  
+  text-align: left;
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  padding-bottom: 40px;
+  padding-bottom: 8px;
+  padding-top: 48px;
 }
 
 .privacy .privacy-header .header-content {
@@ -4016,7 +4171,7 @@ section,
 }
 
 .privacy .privacy-header .header-content h1 {
-  font-size: 2.8rem;
+  font-size: 2.0rem;
   color: var(--heading-color);
   margin-bottom: 20px;
   font-weight: 600;
@@ -4052,7 +4207,7 @@ section,
   font-size: 1.4rem;
   color: var(--heading-color);
   margin: 30px 0 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .privacy .privacy-content .content-section p {
@@ -4186,4 +4341,75 @@ section,
   .privacy .privacy-content .content-section h3 {
     font-size: 1.3rem;
   }
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-dropdown {
+  padding: 6px 36px 6px 12px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background-color: transparent;
+  color: var(--default-color);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+
+  /* hide native arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 12px; 
+  pointer-events: none;
+  font-size: 14px;
+  color: var(--default-color);
+}
+
+/* =========================
+   MOBILE MENU UTILITY AREA
+   ========================= */
+@media (max-width: 768px) {
+
+  /* utility container */
+  .mobile-menu-utility {
+    margin-top: 24px;
+    padding: 16px 20px 20px;  
+  }
+
+  .utility-label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* dropdown full width */
+  .mobile-menu-utility .select-wrapper {
+    width: 100%;
+  }
+
+  .mobile-menu-utility .lang-dropdown {
+    width: 100%;
+    padding: 12px 44px 12px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .mobile-menu-utility .select-arrow {
+    right: 16px; 
+  }
+
 }
